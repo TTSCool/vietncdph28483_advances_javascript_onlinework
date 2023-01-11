@@ -34,6 +34,9 @@ const restaurant = {
         console.log(`Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
     },
 
+    orderPasta: function(ing1,ing2,ing3){
+        console.log(`Here is your delicous pasta with ${ing1}, ${ing2} and ${ing3}`);
+    }
 };
 
 const arr = [7,8,9];
@@ -59,6 +62,28 @@ console.log(mainMenuCopy);
 // join arr challenge
 const menu = [...restaurant.mainMenu,...restaurant.starterMenu];
 console.log(menu);
+
+// Iterables???: arrays, strings, maps, sets. NOT objects
+const str = 'Jonas';
+const letters = [...str, ' ','S.'];
+console.log(letters);
+console.log(...str);
+// console.log(`${...str} meeasedasd`); not work
+
+// const ingredients =[prompt('Let\'s make pasta! Ingredient 1?'),prompt('Ingredient 2?'),prompt('Ingredient 3?')];
+// console.log(ingredients);
+
+// restaurant.orderPasta(...ingredients);
+
+//Object
+const newRestaurant = { foundedIn: 2023,...restaurant, founder:'viet'};
+console.log(newRestaurant);
+
+const restaurantCopy = {...restaurant};
+restaurantCopy.name = 'Roma';
+console.log(restaurantCopy);
+console.log(restaurant);
+
 
 /////////////////////////////
 // restaurant.orderDelivery({
