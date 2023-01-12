@@ -39,53 +39,56 @@ const restaurant = {
     }
 };
 
-const arr = [7,8,9];
-const badNewArr = [1,2, arr[0], arr[1], arr[2]];
-console.log(badNewArr);
-
-//const newArr = [1,2, arr];
-const newArr = [1,2, ...arr];
-console.log(newArr);
-
-console.log(...newArr);
-
-console.log(1,2,7,8,9);
-
-//const newMenu = [restaurant.mainMenu, 'Gnocci'];
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-console.log(newMenu);
-
-// copy arr 
-const mainMenuCopy = [...restaurant.mainMenu];
-console.log(mainMenuCopy);
-
-// join arr challenge
-const menu = [...restaurant.mainMenu,...restaurant.starterMenu];
-console.log(menu);
-
-// Iterables???: arrays, strings, maps, sets. NOT objects
-const str = 'Jonas';
-const letters = [...str, ' ','S.'];
-console.log(letters);
-console.log(...str);
-// console.log(`${...str} meeasedasd`); not work
-
-// const ingredients =[prompt('Let\'s make pasta! Ingredient 1?'),prompt('Ingredient 2?'),prompt('Ingredient 3?')];
-// console.log(ingredients);
-
-// restaurant.orderPasta(...ingredients);
-
-//Object
-const newRestaurant = { foundedIn: 2023,...restaurant, founder:'viet'};
-console.log(newRestaurant);
-
-const restaurantCopy = {...restaurant};
-restaurantCopy.name = 'Roma';
-console.log(restaurantCopy);
-console.log(restaurant);
 
 
-/////////////////////////////
+///////////////////////////////////////////105
+// const arr = [7,8,9];
+// const badNewArr = [1,2, arr[0], arr[1], arr[2]];
+// console.log(badNewArr);
+
+// //const newArr = [1,2, arr];
+// const newArr = [1,2, ...arr];
+// console.log(newArr);
+
+// console.log(...newArr);
+
+// console.log(1,2,7,8,9);
+
+// //const newMenu = [restaurant.mainMenu, 'Gnocci'];
+// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
+
+// // copy arr 
+// const mainMenuCopy = [...restaurant.mainMenu];
+// console.log(mainMenuCopy);
+
+// // join arr challenge
+// const menu = [...restaurant.mainMenu,...restaurant.starterMenu];
+// console.log(menu);
+
+// // Iterables???: arrays, strings, maps, sets. NOT objects
+// const str = 'Jonas';
+// const letters = [...str, ' ','S.'];
+// console.log(letters);
+// console.log(...str);
+// // console.log(`${...str} meeasedasd`); not work
+
+// // const ingredients =[prompt('Let\'s make pasta! Ingredient 1?'),prompt('Ingredient 2?'),prompt('Ingredient 3?')];
+// // console.log(ingredients);
+
+// // restaurant.orderPasta(...ingredients);
+
+// //Object
+// const newRestaurant = { foundedIn: 2023,...restaurant, founder:'viet'};
+// console.log(newRestaurant);
+
+// const restaurantCopy = {...restaurant};
+// restaurantCopy.name = 'Roma';
+// console.log(restaurantCopy);
+// console.log(restaurant);
+
+
+///////////////////////////// 104
 // restaurant.orderDelivery({
 //     time: '22:30',
 //     address: 'Via del Sole, 21',
@@ -119,7 +122,7 @@ console.log(restaurant);
 // const {fri: {open: o, close: c}} = openingHours
 // console.log(o, c);
 
-///////////////////////////////////////////////
+/////////////////////////////////////////////// 103
 // const arr = [2,3,4];
 // const a = arr[0];
 // const b = arr[1];
