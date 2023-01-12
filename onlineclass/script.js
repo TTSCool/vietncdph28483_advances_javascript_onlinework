@@ -36,10 +36,44 @@ const restaurant = {
 
     orderPasta: function(ing1,ing2,ing3){
         console.log(`Here is your delicous pasta with ${ing1}, ${ing2} and ${ing3}`);
+    },
+
+    orderPizza: function(mainIngredient, ...otherIngredients){
+        console.log(mainIngredient);
+        console.log(otherIngredients);
     }
 };
 
 
+////////////////////////////////106
+// //chia ra
+// const arr = [1,2, ...[3,4]];
+// //
+// const [a,b, ...others] = [1,2,3,4,5];
+// console.log(a,b,others);
+// //
+// const [pizza, , risotto,...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(pizza, risotto, otherFood);
+// //object
+// const {sat, ...weekdays} = restaurant.openingHours;
+// console.log(weekdays);
+// //functions
+// const add = function(...numbers){
+//     let sum = 0;
+//     for(let i = 0; i < numbers.length;i++){
+//         sum+=numbers[i];
+//     }
+//     console.log(sum);
+// }
+// add(2,3);
+// add(5,3,7,2);
+// add(8,2,5,3,2,1,4);
+
+// const x = [23,5,7];
+// add(...x);
+
+// restaurant.orderPizza('mushroom', 'onion', 'olives', 'spinach');
+// restaurant.orderPizza('mushroom');
 
 ///////////////////////////////////////////105
 // const arr = [7,8,9];
