@@ -43,6 +43,20 @@ const restaurant = {
         console.log(otherIngredients);
     }
 };
+////////////////////////////109
+
+
+
+
+
+//////////////////////////////108
+// restaurant. numGuests = 0;
+// const guests1 = restaurant.numGuests ? restaurant. numGuests : 10;
+// console.log(guests1);
+
+// const guestCorrect = restaurant.numGuests ?? 10;
+// console.log(guestCorrect);
+
 
 /////////////////////////////////107
 // // use any data type, return any data type, short-circuiting
