@@ -43,7 +43,7 @@ const game = {
         team2: 6.5,
     },
 };
-
+// //part1
 //1
 const [players1, players2] = game.players;
 console.log(players1, players2);
@@ -67,3 +67,22 @@ printGoals(...game.scored);
 //7
 team1 < team2 && console.log('Team1 has more chance of winning');
 team1 > team2 && console.log('Team2 has more chance of winning');
+
+
+// //part2
+//1
+for ( const [number,player] of game.scored.entries()) console.log(`Goal  ${number+1}: ${player}`);
+//2
+const odds = Object.values(game.odds);
+let average = 0;
+for (const odd of odds) average += odd;
+average /= odds.length;
+console.log(average);
+//3
+for ( const [team,odd] of Object.entries(game.odds)){
+    const teamStr = team === 'x' ? 'hòa' : `thắng của ${game[team]}`;
+    console.log(`Tỉ lệ ${teamStr}: ${odd}`);
+}
+// 
+//  Tỉ lệ hòa of draw: 3.25
+//  Tỉ lệ thắng của Borrussia Dortmund: 6.5
