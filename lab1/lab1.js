@@ -83,6 +83,3 @@ for ( const [team,odd] of Object.entries(game.odds)){
     const teamStr = team === 'x' ? 'hòa' : `thắng của ${game[team]}`;
     console.log(`Tỉ lệ ${teamStr}: ${odd}`);
 }
-// 
-//  Tỉ lệ hòa of draw: 3.25
-//  Tỉ lệ thắng của Borrussia Dortmund: 6.5
